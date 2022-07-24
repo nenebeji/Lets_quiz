@@ -19,6 +19,60 @@
         </nav>
     </header>
 
+    <div class="quiz-intro">
+        <div class="introheader">
+            <h1>LET'S QUIZ! 📝</h1>
+        </div>
+        <div class="intructions">
+            <p>
+                Try to answer the following code-related questions before the time runs out. Keep in mind that a penalty of 10s will be deducted from your time/score for incorrect answers. Goodluck! 😊 
+            </p>
+        </div>
+        
+        <button id="StartQuiz">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container">
+        <div class="question-answer">
+            <h2 id="question">Question</h2>
+            <ul>
+                <li>
+                    <label id="a">
+                        <button class="answer"><span id="1">answer</span></button>
+                    </label>
+                </li>
+                <li>
+                    <label id="b">
+                        <button class="answer"><span id="2">answer</span></button>
+                    </label>
+                </li>
+                <li>
+                    <label id="c">
+                        <button class="answer"><span id="3">answer</span></button>
+                    </label>
+                </li>
+                <li>
+                    <label id="d">
+                        <button class="answer"><span id="4">answer</span></button>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="end-container">
+        <div class="finish">
+            <h2>Finished!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+        </div>
+        <div class="initials-submit">
+            <label class="initials"> Enter initials:
+                <input type="text"> <button id="submit">Submit</button>
+            </label>
+        </div>
+    </div>
+
 
     <script src="./assets/js/script.js"></script>
 </body>
+</html>
