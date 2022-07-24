@@ -1,0 +1,54 @@
+:root{
+    --button-text: white;
+    --button-color: #1322aa;
+    --button-border: #172884;
+} 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 350px;
+    font-size: 90%;
+    width: 100%;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.quiz-intro {
+    text-align: center;
+}
+
+.quiz-container {
+    display: none;
+}
+
+.end-container {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.introheader {
+    padding: 10px;
+}
+
+.quiz-intro button {
+    padding: 5px;
+    margin-top: 10px;
+}
