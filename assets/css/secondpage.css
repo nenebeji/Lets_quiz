@@ -19,6 +19,10 @@ body {
     height: 60vh
 }
 
+.HS-container {
+    margin-right: 350px;
+}
+
 button {
     margin-top: 10px;
     padding-left: 10px;
@@ -46,4 +50,9 @@ table {
 
 #clear-HS {
     margin-left: 3px;
+}
+
+button:hover:active {
+    background-color: #648be8;
+    color: white;
 }
