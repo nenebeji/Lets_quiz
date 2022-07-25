@@ -105,8 +105,13 @@ a {
     color: #269a9a;
 }
 
-button:hover:active {
+button:hover {
     background-color: #648be8;
     color: white;
 }
 
+button:active {
+    background-color: #648be8;
+    border: solid #b2ffff;
+    color: white;
+}

@@ -49,10 +49,11 @@ table {
 }
 
 #clear-HS {
-    margin-left: 3px;
+    margin-left: 10px;
 }
 
-button:hover:active {
+button:hover:focus:active {
     background-color: #648be8;
     color: white;
 }
+
