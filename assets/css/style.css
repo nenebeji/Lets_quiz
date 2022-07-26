@@ -34,7 +34,8 @@ main {
 
 .quiz-container {
     display: none;
-    margin-right: 400px;
+    width: 60%;
+   
 }
 
 .quiz-container button {
@@ -47,31 +48,31 @@ main {
     color: var(--button-text);
     background-color: var(--button-color);
     border: solid var(--button-border);
-    width: 180%;
+    width: 50%;
 }
 
 .quiz-container ul li {
     margin-bottom: -5px;
 }
 
-.end-container {
+#end-container {
     display: none;
 }
 
-.end-container h2 {
+#end-container h2 {
     margin-bottom: 15px;
 }
 
-.end-container p {
+#end-container p {
     margin-bottom: 10px;
 }
 
-.end-container input {
+#end-container input {
     margin-left: 5px;
     padding: 5px;
 }
 
-.end-container button {
+#end-container button {
     margin-left: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -111,6 +112,28 @@ button:hover {
 }
 
 button:active {
+    background-color: #648be8;
+    border: solid #b2ffff;
+    color: white;
+}
+
+h3 {
+    display: none;
+    margin: 30px;
+    font-weight: lighter;
+    font-style: oblique;
+    color: #269a9a;
+    opacity: 60%;
+    border-top: solid gray;
+    width: 100%;
+}
+
+#submit:hover {
+    background-color: #648be8;
+    color: white;
+}
+
+#submit:active {
     background-color: #648be8;
     border: solid #b2ffff;
     color: white;
