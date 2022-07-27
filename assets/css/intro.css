@@ -1,0 +1,85 @@
+:root{
+    --button-text: white;
+    --button-color: #1322aa;
+    --button-border: #172884;
+    font-size: 70%;
+    background-color: rgba(209, 238, 253, 0.396);
+} 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 350px;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #269a9a;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.quiz-intro {
+    text-align: center;
+}
+
+.introheader {
+    margin-bottom: 20px;
+}
+
+
+h1, h2, h3{
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+/* buttons */
+
+.btn {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    width: 15rem;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border: 0.1rem solid var(--button-border);
+}
+
+.btn:hover {
+    box-shadow: 0 0.3rem 1.3rem 0 #6791f1e3;
+    color: white;
+}
+
+.btn:active {
+    background-color: #648be8;
+    border: solid #b2ffff;
+    color: white;
+}
+
+.btn[disabled]:hover {
+    box-shadow: none;
+}

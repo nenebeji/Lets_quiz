@@ -11,7 +11,6 @@
     font-family: sans-serif;
 }
 
-
 body {
     display: flex;
     align-items: center;
@@ -56,4 +55,3 @@ button:hover:focus:active {
     background-color: #648be8;
     color: white;
 }
-
