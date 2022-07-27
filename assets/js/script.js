@@ -3,9 +3,11 @@ var endcontainer = document.getElementById("end-container")
 var submitbtn = document.getElementById("submit");
 var timeEl = document.querySelector("#timer");
 var finalscoretxt = document.querySelector("#final-score");
+var message = document.querySelector("#message");
+var h3 = document.querySelector("h3");
 
 var question = document.getElementById("question");
-var options = document.getElementsByClassName("option-text");
+var options = Array.from(document.getElementsByClassName("option-text"));
 var opt1 = document.getElementById("opt1");
 var opt2 = document.getElementById("opt2");
 var opt3 = document.getElementById("opt3");
@@ -13,9 +15,11 @@ var opt4 = document.getElementById("opt4");
 var optionEL = document.querySelector("#optionEl");
 console.log(options);
 
-
+var currentQ = {};
 var acceptedAns = true;
 var questioncount = 0;
+
+var MaxQs = 4;
 
 var availableQs = [];
 
@@ -96,27 +100,54 @@ function resetTimer() {
 
 // to start Quiz
 function startQuiz() {
+    questioncount = 0;
+    //availableQs = [...questions];
     setTimer();
     getnewQ();
 }
 
-function getnewQ() {
 
-    var currentQ = questions[questioncount];
+function getnewQ() {
+    //questioncount++;
+    // var QuestionI = Math.floor(Math.random() * availableQs.length)
+    currentQ = questions[questioncount];
     question.innerText = currentQ.question;
     opt1.innerText = currentQ[1];
     opt2.innerText = currentQ[2];
     opt3.innerText = currentQ[3];
     opt4.innerText = currentQ[4];
+
+    acceptedAns = true;
+    
+  options.forEach(option => {
+    option.addEventListener("click", e => {
+        if(!acceptedAns) return;
+
+        acceptedAns = false;
+        var selectedoption = e.target;
+        var selectedAnswer = selectedoption.dataset["number"];
+
+        console.log(selectedAnswer == currentQ.answer);
+
+        if(selectedAnswer == currentQ.answer) {
+            h3.style.display = "block"
+            message.textContent = "Correct!";
+        }
+        else {
+            h3.style.display = "block"
+            message.textContent = "Incorrect!";
+            secondsLeft = secondsLeft - 20;
+        }
+    })
+})
 }
 
 
 startQuiz();
 getnewQ();
 // eventlistener for each click to switch to a question
-optionEL.addEventListener("click", function(event) {
-    // prevents bubbling when clicking on buttons
-    event.stopPropagation();
+optionEL.addEventListener("click", function() {
+    
     questioncount++
 
     if(questioncount  < questions.length) {
@@ -127,20 +158,29 @@ optionEL.addEventListener("click", function(event) {
         quizcontainer.style.display = "none";
         endcontainer.style.display = "block";
         finalscoretxt.textContent = secondsLeft;
-    }
-    
+    }  
+   
+}
+)
+
+startQuiz();
+
+
+
+
+// for submit Initials at end of page
+var initials = document.getElementById("initials");
+var submitbtn = document.getElementById("submit");
+
+initials.addEventListener("keyup", function(){
+
 })
+function submit(event) {
+    console.log("saved");
+    event.preventDefault();
+}
 
 
-// variable for each button according to data attribute converted to number to match the answer in each string
 
-console.log(opt2.dataset["number"]);
 
-var opt1btn = + opt1.dataset["number"];
-var opt2btn = + opt2.dataset["number"];
-var opt3btn = + opt3.dataset["number"];
-var opt4btn = + opt4.dataset["number"];
-// get the answer in each string
-var correct = questions[questioncount].answer;
 
-console.log(opt2btn === correct)
