@@ -81,6 +81,7 @@ function setTimer() {
           quizcontainer.style.display = "none";
           endcontainer.style.display = "block";
           finalscoretxt.textContent = secondsLeft;
+          localStorage.setItem("score", secondsLeft);
         }
       }, 1000);
 
@@ -158,6 +159,7 @@ optionEL.addEventListener("click", function() {
         quizcontainer.style.display = "none";
         endcontainer.style.display = "block";
         finalscoretxt.textContent = secondsLeft;
+        localStorage.setItem("score", secondsLeft);
     }  
    
 }
@@ -171,13 +173,33 @@ startQuiz();
 // for submit Initials at end of page
 var initials = document.getElementById("initials");
 var submitbtn = document.getElementById("submit");
+var recentscore = localStorage.getItem("score")
+
+var HighScores = JSON.parse(localStorage.getItem("HighScores")) || [];
+console.log(HighScores);
 
 initials.addEventListener("keyup", function(){
-
+    
+    submitbtn.disabled = !initials.value;
 })
+
 function submit(event) {
-    console.log("saved");
     event.preventDefault();
+
+    var score = {
+        score: recentscore,
+        name: initials.value,
+    };
+    HighScores.push(score);
+
+    // sort the highscores 
+    HighScores.sort(function(a,b) {
+        return b.score - a.score;
+    })
+    //cut of everything after 6 scores.
+    HighScores.splice(6);
+
+    localStorage.setItem("HighScores", JSON.stringify(HighScores));
 }
 
 

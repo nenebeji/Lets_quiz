@@ -82,4 +82,5 @@ p {
 
 .btn[disabled]:hover {
     box-shadow: none;
+    cursor: not-allowed;
 }
