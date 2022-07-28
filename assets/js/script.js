@@ -19,9 +19,9 @@ var currentQ = {};
 var acceptedAns = true;
 var questioncount = 0;
 
-var MaxQs = 4;
+//var MaxQs = 4;
 
-var availableQs = [];
+//var availableQs = [];
 
 var questions = [
     {
