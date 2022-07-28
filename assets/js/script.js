@@ -164,7 +164,6 @@ optionEL.addEventListener("click", function() {
 }
 )
 
-startQuiz();
 
 
 
