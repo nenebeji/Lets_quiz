@@ -72,3 +72,16 @@ button:hover:focus:active {
     background-color: #648be8;
     color: white;
 }
+
+#HighScoresL {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.High-Score {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+

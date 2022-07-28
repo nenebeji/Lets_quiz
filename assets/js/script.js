@@ -183,6 +183,8 @@ initials.addEventListener("keyup", function(){
     submitbtn.disabled = !initials.value;
 })
 
+submitbtn.addEventListener("click", submit);
+
 function submit(event) {
     event.preventDefault();
 
@@ -200,6 +202,7 @@ function submit(event) {
     HighScores.splice(6);
 
     localStorage.setItem("HighScores", JSON.stringify(HighScores));
+    window.location.assign("./highscore.html");
 }
 
 

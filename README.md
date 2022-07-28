@@ -39,7 +39,7 @@ The aim of this project was to build a timed quiz that stores high scores. It al
 
 * Stored the seconds left in the localstorage as the score.
 
-* Then stored the high scores as a string and then an array by using the JSON.stringify and JSON.parse.
+* Then stored the high scores as a string and then an object using the JSON.stringify and JSON.parse.
 
 * Finally made the high score values appear at the high score page.
 
