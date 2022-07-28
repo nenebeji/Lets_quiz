@@ -64,7 +64,6 @@ var questions = [
 var secondsLeft = 100;
 var timerInterval = null;
 
-timeout = setTimeout(setTimer, 1000);
 
 function setTimer() {
     if(timerInterval) {

@@ -54,8 +54,5 @@ https://nenebeji.github.io/Lets_quiz/
 
 
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 8286b028f71cf606e4b405103b2f190bd47ee753
