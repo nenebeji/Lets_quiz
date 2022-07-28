@@ -10,6 +10,7 @@ HighScoresL.innerHTML = HighScores.map(score => {
 // removes from local storage 
 function removeHS() {
     localStorage.removeItem("HighScores");
+    HighScoresL.innerHTML = "";
 }
 
 // Clears high scores
