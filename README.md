@@ -1,5 +1,6 @@
 # LET'S QUIZ!
 
+![Let's Quiz](https://user-images.githubusercontent.com/105363883/181396347-ebceae9a-4e61-4d3a-b56a-7ea66e601cf8.gif)
 
 > Quiz Time!
 
@@ -53,3 +54,8 @@ https://nenebeji.github.io/Lets_quiz/
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8286b028f71cf606e4b405103b2f190bd47ee753
