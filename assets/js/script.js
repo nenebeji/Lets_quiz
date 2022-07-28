@@ -77,6 +77,7 @@ function setTimer() {
         if(secondsLeft === 0) {
           // Stops execution of action at set interval
           resetTimer();
+          alert("OOOPS! TIME'S UP! GAME OVER!")
           quizcontainer.style.display = "none";
           endcontainer.style.display = "block";
           finalscoretxt.textContent = secondsLeft;
