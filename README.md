@@ -1,5 +1,6 @@
 # LET'S QUIZ!
 
+![Let's Quiz](https://user-images.githubusercontent.com/105363883/181396347-ebceae9a-4e61-4d3a-b56a-7ea66e601cf8.gif)
 
 > Quiz Time!
 
@@ -48,6 +49,10 @@ The aim of this project was to build a timed quiz that stores high scores. It al
 URL for application:
 
 https://nenebeji.github.io/Lets_quiz/
+
+
+
+
 
 
 
