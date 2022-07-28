@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Let's Quiz</title>
+  <link rel="stylesheet" href="./assets/css/intro.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./highscore.html">View high scores</a></li>
+                <li>Time: <span id = "timer">0</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="container">
+            <div id="quiz" class="quizCont">
+                <h2 id="question">What is the answer to this question?</h2>
+                <div id="optionEl">
+                    <div class="option-Cont">
+                        <p class="option-prefix">1.</p>
+                        <p class="option-text" data-number = "1" id="opt1">option 1</p>
+                    </div>
+                    <div class="option-Cont">
+                        <p class="option-prefix">2.</p>
+                        <p class="option-text" data-number = "2" id="opt2">option 2</p>
+                    </div>
+                    <div class="option-Cont">
+                        <p class="option-prefix">3.</p>
+                        <p class="option-text" data-number = "3" id="opt3">option 3</p>
+                    </div>
+                    <div class="option-Cont">
+                        <p class="option-prefix">4.</p>
+                        <p class="option-text" data-number = "4" id="opt4">option 4</p>
+                    </div>
+                </div>
+            </div>
+            <h3><span id="message">0</span></h3>
+        </div>
+        <div id="end-container">
+            <div class="finish">
+                <h2>Finished!</h2>
+                <p>Your final score is <span id="final-score">0</span>.</p>
+            </div>
+            <div class="initials-submit">
+                <label class="initials"> Enter initials:
+                    <input type="text" id="initials"> <a href="./highscore.html"><button class="btn" id="submit" disabled>Submit</button></a>
+                </label>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
