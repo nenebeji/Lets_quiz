@@ -4,8 +4,7 @@ var HighScores = JSON.parse(localStorage.getItem("HighScores")) || [];
 // sends a list items to html
 HighScoresL.innerHTML = HighScores.map(score => {
     return `<li class = "High-Score">${score.name} - ${score.score}</li>`;
-})
-.join("");
+}).join("");
 
 // removes from local storage 
 function removeHS() {
