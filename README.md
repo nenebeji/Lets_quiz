@@ -1,22 +1,28 @@
 # LET'S QUIZ!
-
-A fun timed quiz app that stores high scores.
-
-![Let's Quiz](https://user-images.githubusercontent.com/105363883/181396347-ebceae9a-4e61-4d3a-b56a-7ea66e601cf8.gif)
-
-> Quiz Time!
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
-* Description
+- [Project Description](#project-description)
 
-* * Problems Solved
+  - [Problems Solved](#problems-solved)
 
-* References
+- [Screenshots](#screenshots)
+
+- [Usage](#usage)
+
+- [How to Contribute](#how-to-contribute)
+
+- [Tests](#tests)
+
+- [Questions](#questions)
+
+- [License](#license)
 
 
-## Description
-The aim of this project was to build a timed quiz that stores high scores. It also has an extra penalty of 20s reduction when a question is answered incorrectly.
+## Project Description
+
+This is a fun timed quiz application that stores high scores. It also has an extra penalty of 20s reduction when a question is answered incorrectly.
 
 ### Problems Solved
 
@@ -46,11 +52,69 @@ The aim of this project was to build a timed quiz that stores high scores. It al
 
 * Finally made the high score values appear at the high score page.
 
-## References
+## Screenshots
+
+![Webpage Image](/assets/images/LetsQuiz.gif)
+> Webpage Image
+
+## Usage
+
+Click the link below to open the web page.
 
 URL for application:
 
 https://nenebeji.github.io/Lets_quiz/
+
+## How to Contribute
+
+1. Clone the repo using $ git clone git@github.com:nenebeji/Lets_quiz
+
+2. Create a new branch $ git checkout -b your name 
+
+3. Make Changes and test 
+
+4. Submit a pull request with description for review
+
+## Tests
+
+Tests were run using console and browser page.
+
+## Questions
+
+Feel free to contact me for further questions via:
+
+Github: https://github.com/nenebeji
+
+Email: nenebeji@gmail.com
+
+## License
+
+The MIT License
+
+  
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+    
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+    
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+For more informaation you can click the link below:
+
+https://opensource.org/licenses/MIT
+
+Copyright (c) 2022 Oritsegidenene Beji.
 
 
 
