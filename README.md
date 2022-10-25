@@ -55,7 +55,7 @@ This is a fun timed quiz application that stores high scores. It also has an ext
 ## Screenshots
 
 ![Webpage Image](/assets/images/LetsQuiz.gif)
-> Webpage Image
+> Let's Quiz!
 
 ## Usage
 
