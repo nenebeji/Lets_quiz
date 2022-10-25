@@ -24,6 +24,16 @@
 
 This is a fun timed quiz application that stores high scores. It also has an extra penalty of 20s reduction when a question is answered incorrectly.
 
+* When a user clicks the start button the timer starts and they are presented with a question.
+
+* When the user answers the question incorrectly, then time is subtracted from the clock.
+
+* When all questions are answered correctly or the timer reaches 0, then the game is over.
+
+* When the game is over, the user can save their initials and score, and this is displayed in the highscores page.
+
+* A user can view previous and also clear highscores by clicking the 'view high scores' button. 
+
 ### Problems Solved
 
 * I Created three html files:
