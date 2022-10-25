@@ -1,5 +1,7 @@
 # LET'S QUIZ!
 
+A fun timed quiz app that stores high scores.
+
 ![Let's Quiz](https://user-images.githubusercontent.com/105363883/181396347-ebceae9a-4e61-4d3a-b56a-7ea66e601cf8.gif)
 
 > Quiz Time!
